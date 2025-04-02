@@ -84,8 +84,8 @@ public use fun attach_repairing_record_and_return as Card.complete_repair;
 // `add`, `new`, `drop`, `empty`, `remove`, `destroy_empty`, `to_object_name`, `from_object_name`, `property_name_mut`
 // https://docs.sui.io/concepts/sui-move-concepts/conventions#crud-functions-names
 
-// Set up a GogoroWarranty, so the brand owner known as publisher, who can issue warranty for the brand after init
-// GogoroWarranty will be a public object every one can use the methods thereof
+// Set up a GororoWarranty, so the brand owner known as publisher, who can issue warranty for the brand after init
+// GororoWarranty will be a public object every one can use the methods thereof
 fun init(ctx: &mut TxContext) {
     let owner_cap = GororoOwnerCap {
             id: object::new(ctx),
